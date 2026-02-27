@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-card: #16161f;
+  --border: #2a2a3a;
+  --text-primary: #e4e4eb;
+  --text-secondary: #8888a0;
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+  --green: #22c55e;
+  --red: #ef4444;
+  --yellow: #eab308;
+  --accent-glow: rgba(124, 58, 237, 0.3);
+  --gradient-start: #7c3aed;
+  --gradient-end: #2563eb;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
