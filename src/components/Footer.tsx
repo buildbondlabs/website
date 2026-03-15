@@ -14,7 +14,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="text-xl font-bold text-[var(--accent)] mb-3">BuildBond</div>
+            <div className="flex items-center gap-2 mb-3">
+              <img src="/logo.png" alt="BuildBond" className="h-8 w-auto" />
+              <span className="text-xl font-bold text-[var(--accent)]">BuildBond</span>
+            </div>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
               The first launch platform where developers stake reputation and lock collateral. Building trust in token launches on Solana.
             </p>
