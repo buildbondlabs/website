@@ -16,7 +16,7 @@ export default function Home() {
         <Problem />
         <HowItWorks />
         <Features />
-        <Stats />
+        {/* <Stats /> */}
         <Community />
       </main>
       <Footer />
