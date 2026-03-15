@@ -4,7 +4,7 @@ const FOOTER_LINKS = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Community', href: '#community' },
-  { label: 'Launch App', href: APP_URL },
+  // { label: 'Launch App', href: APP_URL },
 ];
 
 export default function Footer() {
